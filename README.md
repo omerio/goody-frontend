@@ -1,7 +1,51 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# Goody - Gift payments made easy  [![bitHound Score][bithound-img]][bithound-url]
 
-A PhoneGap Hello World template
+Goody app
 
+## Preparation
+
+### Installing required tools
+
+```bash
+npm install -g bower yo gulp generator-mobileangularui
+sudo npm install -g phonegap
+```
+
+### Scaffold the project
+
+```bash
+phonegap create goody
+cd goody
+yo mobileangularui
+```
+
+Be patient.. this may take a few minutes until npm finishes to install.
+
+### Build the project for the first time
+
+```bash
+gulp build
+```
+
+### Run the application
+
+```bash
+phonegap run ios # or android, or whatever is your target
+```
+
+If this is the first time you'll run phonegap with the choosen target it may complains about missing dependencies.. no fear, just install them and retry.
+
+### Test/Debug in a Web Browser
+
+```bash
+gulp
+```
+
+Now we have built our source and have a web server listening on localhost:8000, a weinre server at localhost:8001, and a watch task rebuilding on code changes.
+
+That said we can open http://localhost:8000/ to see the result of our hard work.
+
+# Mobile Angular UI Docs
 ## Usage
 
 #### PhoneGap CLI
